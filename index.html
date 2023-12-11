@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .custom-container {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+
+            display: flex;
+            /* Usa flexbox para alinear elementos */
+            flex-direction: column;
+            /* Alinea los elementos en columna (verticalmente) */
+            justify-content: center;
+            /* Centra los elementos verticalmente */
+            align-items: center;
+            /* Centra los elementos horizontalmente */
+        }
+
+        .customcontainer {
+            display: flex;
+            /* Usa flexbox para alinear elementos */
+            flex-direction: column;
+            /* Alinea los elementos en columna (verticalmente) */
+            justify-content: center;
+            /* Centra los elementos verticalmente */
+            align-items: center;
+            /* Centra los elementos horizontalmente */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">EncarTour</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Milestones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/milestone1.html">Milestone #1</a></li>
+                            <li><a class="dropdown-item" href="/milestone2.html">Milestone #2</a></li>
+                            <li><a class="dropdown-item" href="/milestone3.html">Milestone #3</a></li>
+                            <li><a class="dropdown-item" href="/milestone4.html">Milestone #4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="/imagen/medio.png" class="img-fluid" alt="...">
+    <div class="custom-container">
+        <img src="/imagen/logo.png" class="img-fluid" alt="...">
+        <h3>Una plataforma donde podrás acceder a información sobre las locaciones turísticas de la ciudad, además de conocer las diversas propuestas de restaurantes y los eventos futuros programados. Todo esto en un solo lugar y al alcance de un click.</h3>
+    </div>
+    <div class="card mb-3 custom-container" style="max-width: 80%; border: none">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="/imagen/locacion.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8 customcontainer">
+                <div class="card-body customcontainer">
+                    <h1 class="card-title">LOCACIONES TURÍSTICAS</h1>
+                    <h4 class="card-text">Dentro de este apartado podremos acceder a todos los lugares turísticos de la ciudad, desde playas, parques, monumentos y muchos más. Con una interfaz amigable e intuitiva podrás acceder a lugares de diversas formas: </h4>
+                    <h4 class="card-text"><small class="text-body-secondary">Mediante el buscador principal. <br>Por medio del mapa en pantalla <br>Usando los filtros disponibles </small></h4>
+                    <h4 class="card-text">Con todas estas opciones garantizamos la busqueda eficinete de los lugares que
+                        necesites y al mismo tiempo puedas explorar aquellos espacios antes desconocidos</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3 custom-container" style="max-width: 80%; border: none">
+        <div class="row g-0">
+            <div class="col-md-8 customcontainer">
+                <div class="card-body customcontainer">
+                    <h1 class="card-title">LOCALES GASTRONÓMICOS</h1>
+                    <h4 class="card-text">Aquí podrás acceder a todos aquellos locales gastronómicos de la ciudad, accediendo a toda la información que necesites en el momento que exacto. Ahora podrás ver detalles como: </h4>
+                    <h4 class="card-text"><small class="text-body-secondary">Ubicación del local y horario de atención. <br>Cuál es el menú del local y los costos que manejan <br>Acceder a los locales por especialidad, ya sea que necesites un menú libre de gluten y petfriendly, aquí podrás encontrarlo </small></h4>
+                    <h4 class="card-text">Recuerda que al igual que el apartado Locaciones Turísticas, aquí también podrás ir buscando locales del mismo modo</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="/imagen/gastronomia.png" class="img-fluid rounded-start" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3 custom-container" style="max-width: 80%; border: none">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="/imagen/evento.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8 customcontainer">
+                <div class="card-body customcontainer">
+                    <h1 class="card-title">EVENTOS</h1>
+                    <h4 class="card-text">Cuando necesites conocer cuales son los eventos más próximos de la semana o cuales son todos los eventos previstos del mes, acá podes encontrar todas las informaciones necesarias: </h4>
+                    <h4 class="card-text"><small class="text-body-secondary">Cuándo y dónde será el evento <br>Una pequeña descripción de que es lo que te encontraras <br>Podrás compartir los eventos con amigos </small></h4>
+                    <h4 class="card-text">Además siempre podrás buscar y filtrar todos los eventos de la manera que mejor se adapte a vos.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
